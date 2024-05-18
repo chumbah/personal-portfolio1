@@ -1,0 +1,274 @@
+body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+.like-element {
+   border: none;
+  }
+.contact{
+  border: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  display: block;
+  position: absolute;
+}
+
+.links-icon img{
+  width: 20px;
+  height: 20px;
+ }
+.links{
+  float: right;
+  align-self: baseline;
+}
+.logo{
+  display: inline-block;
+}
+.navbar li{
+  list-style-type: none;
+  padding-right: 5px;  
+  display: inline-block;
+
+}
+.navbar{
+  display: relative;
+  align-items:center;
+  align-content: space-between;
+  color: whitesmoke;
+  background-color: rgb(31, 30, 30);
+  margin-top: -2px;
+  position: fixed;
+  width: 100%;
+  margin-left: -7px;
+  z-index: 1000;
+}
+@media  only screen and (max-width:500px) {
+.about-card{
+  display: absolute;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+}
+.navbar{
+  height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  }
+.links{
+  display: none;
+}
+.links-icon{
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}
+.logo{
+  position: fixed;
+  z-index: 1000;
+  
+}
+.mobile-links{
+  margin-left: 0;
+  margin-top: 30px;
+  background-color: white;
+  justify-content: center;
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+.mobile-links  li  {
+  display: block ;
+}
+
+.mobile-links ul li{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  border:   solid gray;
+  border-width: 1px 0px 0px 0px;
+  width: 100%;
+  text-align: center;
+  cursor:pointer;
+}
+.mobile-links a{
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+}
+.mobile-links ul{
+  margin-left:  -40px;
+  margin-bottom: -44px;
+}
+}
+@media  only screen and (min-width:501px) {
+  .navbar{
+    display: relative;
+    align-items:center;
+    align-content: space-between;
+    color: whitesmoke;
+    background-color: rgb(31, 30, 30);
+    margin-top: -20px;
+    position: fixed;
+    width: 100%;
+    margin-left: -7px;
+    z-index: 1000;
+  }
+  .mobile-links li{
+    display: none;
+  }
+  
+
+  .about-card{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+     margin: 20px;
+  }
+ .about-image{
+  margin: 40px;
+ }
+ .links a{
+  text-decoration: none;
+  color: white;
+ }
+ .links ul li :hover{
+  box-shadow: 2px 0px 2px 0px cyan;
+ }
+ .links ul li a:active{
+  box-shadow: 2px 0px 2px 0px cyan;
+ }
+ .navbar li{
+  list-style-type: none;
+  padding-right: 10px;  
+  display: inline-block;
+  margin-right: 20px;
+} 
+ 
+.links-icon{
+  display: none;
+}
+  }
+.about-me{
+  width:auto;
+}
+.about-image img{
+  border-radius: 10px;
+}
+.buttons-1{   
+  margin: 0px 10px 0px 10px; 
+  display: inline;
+  padding-left: 30px;
+}
+button a{
+  text-decoration: none;
+  color: black;
+}
+.my-about{
+  border: 2px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px;
+  color: black;
+}
+ .skills{
+  background-color: whitesmoke;
+  color: black;
+  position: relative;
+  width: 100%;
+  margin-left: 18px;
+  padding-left: 10px;
+ }
+ .card{
+  border: solid;
+  border-width: 1px;
+  border-color: brown ;
+  border-radius: 10px;
+  box-shadow: 4px 4px;
+  display: block;
+  margin: 20px;
+  
+ }
+ .services-card{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+ }
+ .card img{
+  width: 40px;
+  height: 40px;
+ }
+ .c-icon{
+    display: flex;
+ }
+ .social-icons a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .social-icons a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+ .socials{
+  display: block;
+  text-align: center;
+  margin-right: 10px
+}
+ .buttons button{
+  margin-left: 10px;
+  border-radius: 20px;
+ }
+ button{
+  border-radius: 20px;
+ }
+ .buttons button:hover{
+  box-shadow: 2px  2px   grey;
+ }
+ 
+ .buttons-1 button:hover{
+  box-shadow: 2px  2px   grey;
+
+ }
+ 
+ .buttons-1 button{
+  margin-left: 10px;
+ }
+ .footer{
+  background-color: white;
+  color: black;
+  margin-left: 18px;
+  padding-left: 4px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  font-family:monospace;
+
+ }
+ .dynamic-text li{
+  list-style: none;
+ }
+ .dynamic-text li p::after{
+  content: "";
+  position: absolute;
+  border-left: 2px solid red;
+  animation: typing 3s steps(30);
+ }
+
+ @keyframes typing {
+    40%,
+    60%{
+      left: calc(100% + 30px);
+    }
+ }
+ .links-icon img{
+  cursor: pointer;
+ }
+ 
