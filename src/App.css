@@ -62,7 +62,7 @@ body{
 }
 .links-icon{
   float: right;
-  margin-right: 20px;
+  margin-right: 80px;
   margin-top: 10px;
   position: fixed;
   right: 0;
@@ -71,7 +71,15 @@ body{
 .logo{
   position: fixed;
   z-index: 1000;
-  
+ margin-left: 20px; 
+}
+.skills{
+  width: 100%;
+  margin-right: -40px;
+}
+.footer{
+  width: 100%;
+  margin-right: -50px;
 }
 .mobile-links{
   margin-left: 0;
@@ -183,6 +191,7 @@ button a{
   position: relative;
   width: 100%;
   margin-left: -18px;
+  margin-right: -18px;
   padding-left: 14px;
  }
  .card{
@@ -247,7 +256,7 @@ button a{
   color: black;
   margin-left: 0px;
   padding-left: 4px;
-  margin-right: -40px;
+  margin-right: -60px;
   margin-left: -10px;
   margin-bottom: -20px;
   font-family:monospace;
@@ -263,12 +272,8 @@ button a{
   animation: typing 3s steps(30);
  }
 
- @keyframes typing {
-    40%,
-    60%{
-      left: calc(100% + 30px);
-    }
- }
+ 
+ 
  .links-icon img{
   cursor: pointer;
  }
