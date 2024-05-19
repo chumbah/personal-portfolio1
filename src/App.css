@@ -1,6 +1,6 @@
 body{
   height: 100%;
-  width: 105%;
+  width: 100%;
   overflow-x: hidden;
 
 }
@@ -45,14 +45,17 @@ body{
   z-index: 1000;
 }
 @media  only screen and (max-width:500px) {
-.about-card{
+*{
+  overflow-x: hidden;
+}
+  .about-card{
   display: absolute;
   width: 100%;
   padding: 20px;
   margin: 20px;
 }
 .navbar{
-  height: 40px;
+  height: 50px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -62,36 +65,37 @@ body{
 }
 .links-icon{
   float: right;
-  margin-right: 80px;
-  margin-top: 10px;
+  margin-right: 40px;
+  margin-top: 18px;
   position: fixed;
   right: 0;
   z-index: 1000;
   overflow-x: hidden;
 }
 .logo{
+  margin-top: 15px;
   position: fixed;
   z-index: 1000;
- margin-left: 20px; 
+ margin-left: 30px; 
 }
-.skills{
-  width: 100%;
-  margin-right: -40px;
-  overflow-x: hidden;
+.skills p,h1 {
+      padding-left: 15px;
+      text-align: cente;    
 }
 .footer{
+  text-align: center;
+
   width: 100%;
-  margin-right: -50px;
+  height: 34px;
   overflow-x: hidden;
 }
 .mobile-links{
-  margin-left: 0;
-  margin-top: 30px;
   background-color: white;
-  justify-content: center;
   width: 100%;
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  height: 140px;
 }
 .mobile-links  li  {
   display: block ;
@@ -115,6 +119,9 @@ body{
 .mobile-links ul{
   margin-left:  -40px;
   margin-bottom: -44px;
+}
+.social-icons{
+  padding-left: 10px;
 }
 }
 @media  only screen and (min-width:501px) {
