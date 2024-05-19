@@ -67,6 +67,10 @@ body{
   position: fixed;
   right: 0;
   z-index: 1000;
+  overflow-x: hidden;
+}
+.mobile-links{
+  overflow-x: hidden;
 }
 .logo{
   position: fixed;
@@ -76,10 +80,12 @@ body{
 .skills{
   width: 100%;
   margin-right: -40px;
+  overflow-x: hidden;
 }
 .footer{
   width: 100%;
   margin-right: -50px;
+  overflow-x: hidden;
 }
 .mobile-links{
   margin-left: 0;
