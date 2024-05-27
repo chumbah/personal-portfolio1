@@ -48,6 +48,9 @@ body{
 *{
   overflow-x: hidden;
 }
+.about-me{
+  margin-left: -16px;
+}
   .about-card{
   display: absolute;
   width: 100%;
