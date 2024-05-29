@@ -30,7 +30,7 @@ let likeIcon = like.isLike ? "like.png" : "unlike.png"
 return (
  <>
  <div className="navbar">
-    <div className="logo">Logo{/*<img src="./user2.png"></img>*/} </div>
+    <div className="logo">KIPCHUMBA{/*<img src="./user2.png"></img>*/} </div>
     
     <div className="links">
     <ul>
