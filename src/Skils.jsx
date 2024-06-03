@@ -30,7 +30,7 @@ export default function Skills(){
             <h2>Javascript</h2></div>
             <div className="c-icon">
                        <img src="js.png" alt="javascript"></img></div>
-                <p>In order to make websites mor user friendly and interactive i achieve it using Javascript.</p>
+                <p>In order to make websites more user friendly and interactive i achieve it using Javascript.</p>
 
             </div>
             <div className="card">

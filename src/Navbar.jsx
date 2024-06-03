@@ -1,9 +1,11 @@
 import React from "react";
 import Skills from "./Skils";
 import Socials from "./Socials";
+import Typed from "typed.js";
 
 
 export default function Navbar(){
+  {/*
 const [like, setLike] = React.useState({
     fname:"Alex",
     isLike: false
@@ -17,18 +19,43 @@ let likeIcon = like.isLike ? "like.png" : "unlike.png"
                
           }))
    }
+*/}
+
+
+
 
    const [displayStyle, setDisplayStyle] = React.useState('none'); // Initial display style
+   const[marginStyle, setMarginStyle]=React.useState("0px")
 
   // Function to toggle display style
   const toggleDisplayStyle = () => {
     // Toggle between 'block' and 'none' display styles
     setDisplayStyle(displayStyle === 'block' ? 'none' : 'block'); 
-    console.log("clicked")
+    setMarginStyle(displayStyle ==='block' ? '0px': '175px');
   }
+
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['kenyan front-end developer.', 'react developer.','web app developer.'],
+      typeSpeed: 120,
+      backSpeed: 40,
+      loop: true
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
+
+
 
 return (
  <>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
  <div className="navbar">
     <div className="logo">KIPCHUMBA{/*<img src="./user2.png"></img>*/} </div>
     
@@ -37,6 +64,7 @@ return (
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#socials">Socials</a></li>
     </ul></div>
     <div className="links-icon" onClick={toggleDisplayStyle}><img src="bars.png"></img> </div>
@@ -46,24 +74,20 @@ return (
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#socials">Socials</a></li>
     </ul></div>
 
 {/*body */}
-<div className="about-card" id="home">
+<div className="about-card" id="home" style={{marginTop: marginStyle}}>
   <div className="about-me">
-  <h1>Hello!</h1>
-  <h1>I'm Alex Kipchumba</h1>
-<div className="dynamic-text">
-  <ul>
-  <li><p><span>A front-end developer</span></p></li>
-  <li><p><span>A React developer</span></p></li>
-  <li><p><span>I make custom web applications</span></p></li>
-  </ul>
-</div></div>
+  <h1>Hi!</h1>
+  <h1>I am Alex Kipchumba</h1>
+  <p>A <span className="dynamic-txt" ref={el}> </span></p>  
+</div>
   <div className="about-image">
-    <img src="user2.png"></img>
-  </div></div>
+    <img src="img5.png"></img>
+</div></div>
   <div className="buttons-1">
   <button>Hire me</button>
   <button><a href="./alex-cv.pdf"download="Alex-cv">Download Cv</a></button>
