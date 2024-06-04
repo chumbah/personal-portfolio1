@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import firebase from "firebase/compat/app";
+import { onSnapshot } from "firebase/firestore";
+import { contactCollection } from "./firebase";
 
 export default function Socials(){
      
@@ -7,6 +9,10 @@ export default function Socials(){
         window.alert("Under construction! \n use social media below");
         
     }
+
+    React.useEffect(()=>{
+        onSnapshot(contactCollection, function())
+    }, [])
     return(
         <>
         <div className="feedback" id="contact">
